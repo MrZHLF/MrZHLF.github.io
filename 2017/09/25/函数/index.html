@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>函数 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="[TOC] 函数函数声明和函数表达式通过字面量创建函数的方式有两种：函数声明和函数表达式。 函数声明： 1234567function sum(x, y) &amp;#123;    var result = x + y;    return result;&amp;#125; 函数表达式： 1234567var sum = function (x, y) &amp;#123;    var result = x + y">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/函数/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 函数函数声明和函数表达式通过字面量创建函数的方式有两种：函数声明和函数表达式。 函数声明： 1234567function sum(x, y) &amp;#123;    var result = x + y;    return result;&amp;#125; 函数表达式： 1234567var sum = function (x, y) &amp;#123;    var result = x + y">
+<meta property="og:updated_time" content="2017-10-17T10:12:00.621Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="函数">
+<meta name="twitter:description" content="[TOC] 函数函数声明和函数表达式通过字面量创建函数的方式有两种：函数声明和函数表达式。 函数声明： 1234567function sum(x, y) &amp;#123;    var result = x + y;    return result;&amp;#125; 函数表达式： 1234567var sum = function (x, y) &amp;#123;    var result = x + y">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-函数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/25/函数/" class="article-date">
+  <time datetime="2017-09-25T03:07:48.000Z" itemprop="datePublished">2017-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      函数
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数声明和函数表达式"><a href="#函数声明和函数表达式" class="headerlink" title="函数声明和函数表达式"></a>函数声明和函数表达式</h2><p>通过字面量创建函数的方式有两种：函数声明和函数表达式。</p>
+<p>函数声明：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> result = x + y;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>函数表达式：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span> (<span class="params">x, y</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> result = x + y;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> result;</div><div class="line"></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>函数声明和函数表达式除了在语法上有一些差异外，作用都是一样的。</p>
+<p>函数声明被提升到上下文的顶部（函数所在的作用域）。也就是说我们可以在函数声明之前使用它，并且不会产生错误。例如:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> result = sum(<span class="number">3</span>, <span class="number">5</span>);</div><div class="line"><span class="built_in">console</span>.log(result);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> result = x + y;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>但是，函数表达式不能被提升，下面的代码会报错：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 函数表达式不会被提升</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> result = sum(<span class="number">3</span>, <span class="number">5</span>);</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(result);</div><div class="line"></div><div class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span> (<span class="params">x, y</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> result = x + y;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>建议大家无论在使用哪种字面量的方式创建Function类型的对象时，一定要先声明后使用。</p>
+<h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>形参：创建函数时，指定的参数。<br>实参：调用函数时，实际传递给函数的参数。</p>
+<p>函数另一独特之处是无论我们传递给它多少个参数它都不会报错。这是因为我们传递给函数的实参实际上被保存到了一个类似于数组的对象中，<code>arguments</code>，数组可以包含任意数量的元素，所以可以我们向函数传递任意数量的实参。我们在访问这些参数的时候可以通过数组下表的方式访问。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">x, y</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> x + y;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> result1 = sum(<span class="number">2</span>, <span class="number">3</span>);</div><div class="line"><span class="built_in">console</span>.log(result1);</div><div class="line"></div><div class="line"><span class="keyword">var</span> result2 = sum(<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">6</span>);</div><div class="line"><span class="built_in">console</span>.log(result2);</div><div class="line"></div><div class="line"><span class="keyword">var</span> result3 = sum();</div><div class="line"><span class="built_in">console</span>.log(result3);</div><div class="line"></div><div class="line"><span class="keyword">var</span> result4 = sum(<span class="number">2</span>);</div><div class="line"><span class="built_in">console</span>.log(result4);</div></pre></td></tr></table></figure>
+<p>由于函数没有形参，我们必须阅读函数体内的代码才能知道函数需要几个形参，所以很多开发人员不愿意使用<code>arguments</code>对象。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">arguments</span>[<span class="number">0</span>] + <span class="built_in">arguments</span>[<span class="number">1</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然而，有些时候使用<code>arguments</code>比使用形参更高效。比如，我们要创建一个用来求和的函数，它可以接受任意数量的参数，并返回它们的和。这个时候我们就不能使用形参，因为我们不知道会传递过来多少个实参，因此，使用<code>arguments</code>是最好的选择。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> result = <span class="number">0</span>,</div><div class="line">        i = <span class="number">0</span>,</div><div class="line">        len = <span class="built_in">arguments</span>.length;</div><div class="line"></div><div class="line">    <span class="keyword">while</span>(i &lt; len)&#123;</div><div class="line"></div><div class="line">        result += <span class="built_in">arguments</span>[i];</div><div class="line">        i++;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> result;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(sum(<span class="number">2</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">5</span>, <span class="number">5</span> ,<span class="number">90</span>));</div></pre></td></tr></table></figure>
+<h2 id="将函数作为值"><a href="#将函数作为值" class="headerlink" title="将函数作为值"></a>将函数作为值</h2><p>我可以像其他对象那样使用函数，比如，可以将它们赋值给另一个变量，可以将将它们作为对象的属性值，可以作为参数传递给其他函数，还可以作为其他函数的返回值。</p>
+<p>1.可以将它们赋值给另一个变量</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi!'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">sayHi();</div><div class="line"></div><div class="line"><span class="keyword">var</span> sayHi2  = sayHi;</div><div class="line"></div><div class="line">sayHi2();</div></pre></td></tr></table></figure>
+<p>2.可以将将它们作为对象的属性值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi!'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line"></div><div class="line">    name: <span class="string">'冯晨阳'</span>,</div><div class="line">    greeting: sayHi</div><div class="line"></div><div class="line">&#125;;</div><div class="line"></div><div class="line">person.greeting();</div></pre></td></tr></table></figure>
+<p>3.可以作为参数传递给其他函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>, <span class="number">25</span>, <span class="number">18</span>, <span class="number">4</span>, <span class="number">7</span>, <span class="number">10</span>, <span class="number">2</span>, <span class="number">6</span>];</div><div class="line"></div><div class="line"><span class="keyword">var</span> result1 = numbers.sort();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(result1);</div><div class="line"></div><div class="line"><span class="keyword">var</span> result2 = numbers.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>)</span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> a - b;</div><div class="line"></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(result2);</div></pre></td></tr></table></figure>
+<p>4.可以作为其他函数的返回值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">parent</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">var</span> i = <span class="number">0</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">child</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        i++;</div><div class="line">        <span class="built_in">console</span>.log(i);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> child;</div><div class="line">&#125;   </div><div class="line"></div><div class="line"><span class="keyword">var</span> func = parent();</div><div class="line">func();</div></pre></td></tr></table></figure>
+<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><p>概念：在同一个作用域下，可以有组具有相同函数名，不同参数列表（形参的数量和类型不同）的函数，这样一组函数被称为重载函数。</p>
+<p>作用：函数重载通常用来命名一组功能相似的函数，这样做减少了函数名的数量，避免了命名冲突，对函数的可读性有很大的好处。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 1.用于计算两个整数的和</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 2.用于合并两个数组</span></div><div class="line"><span class="keyword">int</span>[] sum(<span class="keyword">int</span>[] a, <span class="keyword">int</span>[] b)&#123;</div><div class="line"></div><div class="line">    </div><div class="line">&#125;</div><div class="line"><span class="comment">// 2.用于合并2个字符串</span></div><div class="line"><span class="function"><span class="built_in">string</span> <span class="title">sum</span><span class="params">(<span class="built_in">string</span> a, <span class="built_in">string</span> b)</span></span>&#123;</div><div class="line"></div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line"> sum(<span class="string">"aaaa"</span>,<span class="string">"bbbb"</span>);</div></pre></td></tr></table></figure>
+<p>遗憾的是Jav<br>aScript不支持函数重载，如果在同一个作用域下出现了多个具有相同名称的函数，前面的函数会被最后一个声明的函数覆盖掉。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayMessage</span>(<span class="params">message</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(message);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayMessage</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'默认的消息'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">sayMessage(<span class="string">'Hello!'</span>);</div></pre></td></tr></table></figure>
+<p>虽然JavaScript不支持函数重载，但是不代表我们不能模仿函数重载。我们可以通过<code>arguments</code>检测传入参数的数量，然后根据不同的数量来决定做什么操作。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayMessage</span>(<span class="params">message</span>)</span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (<span class="built_in">arguments</span>.length == <span class="number">0</span>) &#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'默认的消息'</span>);</div><div class="line"></div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">arguments</span>.length == <span class="number">1</span>) &#123;</div><div class="line">        </div><div class="line">        <span class="built_in">console</span>.log(message);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        alert(<span class="string">'参数不符合要求'</span>)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">sayMessage(<span class="string">'ssdfss'</span>);</div></pre></td></tr></table></figure>
+<h2 id="改变this的指向"><a href="#改变this的指向" class="headerlink" title="改变this的指向"></a>改变this的指向</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">    name: <span class="string">'霍林林'</span>,</div><div class="line">    sayName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(person.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">person.sayName();</div></pre></td></tr></table></figure>
+<p>在这个例子中，我们直接使用<code>person.name</code>，这种做法会增加方法与对象之间的耦合度（它们之间的依赖性变强了）。这样写是有问题的 ，如果我们的变量名修改了，我们必须同时修改方法中的变量名。幸运的是，JavaScript给我们提供了解决这个问题的方法。</p>
+<p>javascript中的每一个作用域中都有一个<code>this</code>对象，它代表的是调用函数的对象。在全局作用域中，<code>this</code>代表的是全局对象（在web浏览器中指的是<code>window</code>）。如果包含<code>this</code>的函数是一个对象的方法，<code>this</code>指向的就是这个对象。因此在上面例子中就不用直接写对象的名字，而是使用<code>this</code>代替它，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> human = &#123;</div><div class="line">    name: <span class="string">'霍林林'</span>,</div><div class="line">    sayName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">human.sayName();</div></pre></td></tr></table></figure>
+<h3 id="改变this"><a href="#改变this" class="headerlink" title="改变this"></a>改变this</h3><p><code>this</code>通常是被自动赋值的，但是我们可以改变this的指向。JavaScript给我们提供了 3 中 <strong>函数方法</strong> 来改变this的指向。</p>
+<h4 id="call-方法"><a href="#call-方法" class="headerlink" title="call()方法"></a>call()方法</h4><p>这个方法的第一个参数表示<code>this</code>指向的对象，后面的所有参数都是函数的参数。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayName</span>(<span class="params">label</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(label+<span class="string">'---&gt;'</span>+<span class="keyword">this</span>.name);</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> name = <span class="string">'刘伟丽'</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'王志龙'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = &#123;</div><div class="line">    name: <span class="string">'魏智棋'</span></div><div class="line"></div><div class="line">&#125;;</div><div class="line">sayName.call(<span class="built_in">window</span>,<span class="string">'global'</span>);      <span class="comment">//'global---&gt;刘伟丽'</span></div><div class="line">sayName.call(person1,<span class="string">'person1'</span>);    <span class="comment">//'person1---&gt;王志龙'</span></div><div class="line">sayName.call(person2,<span class="string">'person2'</span>);    <span class="comment">//'person2---&gt;魏智棋'</span></div></pre></td></tr></table></figure>
+<h4 id="apply-方法"><a href="#apply-方法" class="headerlink" title="apply()方法"></a>apply()方法</h4><p>這個方法和<code>call</code>方法的作用都是相同的，只不过在传递参数时候，call方法可以传递多个参数，而apply方法只能传递一个方法，并且要求是一个数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayName</span>(<span class="params">label</span>) </span>&#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(label);</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> name = <span class="string">'霍林林'</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'冯晨阳'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = &#123;</div><div class="line">    name: <span class="string">'魏智棋'</span></div><div class="line"></div><div class="line">&#125;;</div><div class="line">sayName.apply(<span class="built_in">window</span>,[<span class="string">'global'</span>]);   <span class="comment">//'global---&gt;霍林林'</span></div><div class="line">sayName.apply(person1,[<span class="string">'person1'</span>]); <span class="comment">//'person1---&gt;冯晨阳'</span></div><div class="line">sayName.apply(person2,[<span class="string">'person2'</span>]); <span class="comment">//'person2---&gt;魏智棋'</span></div></pre></td></tr></table></figure>
+<h4 id="bind-方法"><a href="#bind-方法" class="headerlink" title="bind()方法"></a>bind()方法</h4><p>bind()方法第一个参数是我们希望函数中this指向的对象，后面的参数是我们希望给函数的参数绑定的值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1 = &#123;</div><div class="line">    name: <span class="string">'王珊珊'</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> name = <span class="string">'杨国兴'</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayName</span> (<span class="params">age, gender</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name, age, gender);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// call方法</span></div><div class="line">sayName.call(obj1, <span class="number">23</span>, <span class="string">'男'</span>);                    <span class="comment">// '王珊珊' 23 '男'</span></div><div class="line"></div><div class="line"><span class="comment">// apply方法</span></div><div class="line">sayName.apply(obj1, [<span class="number">23</span>, <span class="string">'女'</span>]);                 <span class="comment">// '王珊珊' 23 '女'</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> newSayName = sayName.bind(obj1);             </div><div class="line">newSayName();                                    <span class="comment">// '王珊珊' undefined undefined</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> newSayName2 = sayName.bind(obj1, <span class="number">18</span>);        </div><div class="line">newSayName2(<span class="string">'女'</span>);                              <span class="comment">// '王珊珊' 18 '女'</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> newSayName3 = sayName.bind(obj1, <span class="number">18</span>, <span class="string">'女'</span>);   </div><div class="line">newSayName3();                                  <span class="comment">// '王珊珊' 18 '女'</span></div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/09/25/函数/" data-id="cj8vgcb3s0001lglkruynypuq" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/25/Object/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Object对象
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/25/原始类型和引用类型/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">原型类型和引用类型</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categorieën</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt/">JavaScipt</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/jQuery/">jQuery</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/深入理解模块化编程/">深入理解模块化编程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/课件/">jQuery发展 及常用选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/Object/">Object对象</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/函数/">函数</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

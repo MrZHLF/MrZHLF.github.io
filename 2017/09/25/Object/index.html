@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Object对象 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="[TOC] Object实例化Object对象实例化Object对象的方式有两种：使用Object构造器和使用对象的字面量。例如： 1234567var person1 = &amp;#123;    name: &apos;冯晨阳&apos;&amp;#125;;var person2 = new Object();person2.name = &apos;魏智棋&apos;; 为实例添加属性我们可以随时随地为对象添加属性，也可以随时修改属性的值。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Object对象">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/Object/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] Object实例化Object对象实例化Object对象的方式有两种：使用Object构造器和使用对象的字面量。例如： 1234567var person1 = &amp;#123;    name: &apos;冯晨阳&apos;&amp;#125;;var person2 = new Object();person2.name = &apos;魏智棋&apos;; 为实例添加属性我们可以随时随地为对象添加属性，也可以随时修改属性的值。">
+<meta property="og:updated_time" content="2017-10-17T10:13:50.181Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Object对象">
+<meta name="twitter:description" content="[TOC] Object实例化Object对象实例化Object对象的方式有两种：使用Object构造器和使用对象的字面量。例如： 1234567var person1 = &amp;#123;    name: &apos;冯晨阳&apos;&amp;#125;;var person2 = new Object();person2.name = &apos;魏智棋&apos;; 为实例添加属性我们可以随时随地为对象添加属性，也可以随时修改属性的值。">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Object" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/25/Object/" class="article-date">
+  <time datetime="2017-09-25T03:07:48.000Z" itemprop="datePublished">2017-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Object对象
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h1><h2 id="实例化Object对象"><a href="#实例化Object对象" class="headerlink" title="实例化Object对象"></a>实例化Object对象</h2><p>实例化Object对象的方式有两种：使用<code>Object</code>构造器和使用对象的字面量。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'冯晨阳'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">person2.name = <span class="string">'魏智棋'</span>;</div></pre></td></tr></table></figure>
+<h2 id="为实例添加属性"><a href="#为实例添加属性" class="headerlink" title="为实例添加属性"></a>为实例添加属性</h2><p>我们可以随时随地为对象添加属性，也可以随时修改属性的值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'冯晨阳'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person2 = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">person2.name = <span class="string">'魏智棋'</span>;</div><div class="line"></div><div class="line"><span class="comment">//给对象添加属性</span></div><div class="line">person1.age = <span class="number">23</span>;</div><div class="line">person2.age = <span class="number">25</span>;</div><div class="line"></div><div class="line"><span class="comment">//修改属性的值</span></div><div class="line">person1.name = <span class="string">'杨经艳'</span>;</div><div class="line"><span class="built_in">console</span>.log(person1.name);      <span class="comment">//'杨经艳'</span></div><div class="line">person2.name = <span class="string">'刘伟丽'</span>;</div><div class="line"><span class="built_in">console</span>.log(person2.name);      <span class="comment">//'刘伟丽'</span></div></pre></td></tr></table></figure>
+<h2 id="删除对象的属性"><a href="#删除对象的属性" class="headerlink" title="删除对象的属性"></a>删除对象的属性</h2><p>我们可以随时给对象添加属性，也可以随时地删除属性。有的人可能会使用<code>null</code>值赋值给属性，这样并不能删除属性，仅仅是改变了属性的值。我们需要使用<code>delete</code>操作符将属性从对象中完全删除。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'霍林林'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line">person1.name = <span class="literal">null</span>;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person1.name);      <span class="comment">//'霍林林'</span></div><div class="line"></div><div class="line"><span class="keyword">delete</span> person1.name;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person1.name);      <span class="comment">//'undefined'</span></div></pre></td></tr></table></figure>
+<h2 id="检查属性"><a href="#检查属性" class="headerlink" title="检查属性"></a>检查属性</h2><p>由于对象的属性可以被随时随地被修改或删除，因此有时候我们需要检查对象的某个属性是否存在。使用下面的方式检查是不可靠的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'霍林林'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line">person1.name = <span class="string">''</span>;<span class="comment">//或者null/undefined</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> (person1.name) &#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'存在'</span>);</div><div class="line">    </div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'不存在'</span>);         <span class="comment">//'不存在'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>使用这种方式可能会得不到正确的结果，如果属性的值是：对象，非空字符串，非零的数或者true，<code>if</code>条件语句会把它们转换成<code>true</code>。如果属性的值是：null，undefined，0，false，NaN，空字符串，<code>if</code>条件语句会把它们转换成<code>false</code>。检差对象中的属性是否存在的更可靠的方式是使用<code>in</code>操作符:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">            name: <span class="string">'霍林林'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line">person1.name = <span class="string">''</span>;<span class="comment">//或者null/undefined</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> (<span class="string">'name'</span> <span class="keyword">in</span> person1) &#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'存在'</span>);          <span class="comment">//'存在'</span></div><div class="line">    </div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'不存在'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="遍历实例的属性"><a href="#遍历实例的属性" class="headerlink" title="遍历实例的属性"></a>遍历实例的属性</h2><p>默认情况下，我们添加到对象上的属性都是可枚举的，这样的话我们就可以使用<code>for-in</code>循环遍历它们。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    name: <span class="string">'王志龙'</span>,</div><div class="line">    age: <span class="number">23</span>,</div><div class="line">    gender: <span class="string">'男'</span>,</div><div class="line">    address: <span class="string">'鹤壁'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> propertyName;</div><div class="line"></div><div class="line"><span class="keyword">for</span> (propertyName <span class="keyword">in</span> obj)&#123;</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'属性名：'</span> + propertyName);</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'属性值：'</span> + obj[propertyName]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><code>for-in</code>循环每循环一次都会将一个属性名赋值给<code>propertyName</code>，直到所有的属性都被遍历一遍为止。</p>
+<p>如果我们只是想获取一个对象中的所有属性名，可以使用<code>Object.keys()</code>方法。该方法会以数组的形式返回所有的属性名。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.keys(obj));     <span class="comment">// ["name", "age", "gender", "address"]</span></div></pre></td></tr></table></figure>
+<h2 id="属性的分类"><a href="#属性的分类" class="headerlink" title="属性的分类"></a>属性的分类</h2><p>属性的类型分两种：一种是数据属性，一个种是访问器属性。数据属性用来存储一个值，比如所上个例子中的<code>name</code>。访问器属性不包含值，而是定义了一个<code>get</code>和<code>set</code>函数，当读取属性时，调用<code>get</code>函数，当写属性时，调用<code>set</code>函数。</p>
+<p>下面是一个使用字面量的形式定义访问器属性的语法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line"></div><div class="line">    _myname: <span class="string">'clw'</span>,</div><div class="line"></div><div class="line">    get name()&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'get方法被调用了'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>._myname + <span class="string">'1111'</span>;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    set name(value)&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'set方法被调用了'</span>);</div><div class="line">        <span class="keyword">this</span>._myname = value;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj.name);</div></pre></td></tr></table></figure>
+<h2 id="属性的内部特性"><a href="#属性的内部特性" class="headerlink" title="属性的内部特性"></a>属性的内部特性</h2><h3 id="共享的属性"><a href="#共享的属性" class="headerlink" title="共享的属性"></a>共享的属性</h3><p>数据属性和访问器属性共享的内部特性有两个：一个是<code>[[Enumerable]]</code>，这个特性决定了我们是否能够遍历该属性。另一个是<code>[[Configurable]]</code>，这个特性决定了我们是否能够改变属性。默认情况下我们在对象上添加的属性都是可枚举、可配置的。</p>
+<p>如果我们向改变属性的特性，可以使用<code>Object.defineProperty()</code>方法。该方法接受3个参数：拥有被修改属性的对象、被修改的属性名、包含描述特性的对象。描述符和内部特性名称相同，但是没有方括号。例如，我们将一个属性改成不能枚举，不能配置：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;</div><div class="line">    name: <span class="string">'魏智棋'</span>,</div><div class="line">    age: <span class="number">22</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person1.propertyIsEnumerable(<span class="string">'name'</span>));</div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperty(person1, <span class="string">'name'</span>, &#123;</div><div class="line">    enumerable: <span class="literal">false</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'name'</span> <span class="keyword">in</span> person1);                     <span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(person1.propertyIsEnumerable(<span class="string">'name'</span>));  <span class="comment">//false</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> properties = <span class="built_in">Object</span>.keys(person1);</div><div class="line"><span class="built_in">console</span>.log(properties);                            <span class="comment">//["age"]</span></div><div class="line"></div><div class="line"><span class="comment">//delete person1.name;</span></div><div class="line"><span class="comment">//console.log(person1.name);                        //'undefined'</span></div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperty(person1, <span class="string">'name'</span>, &#123;</div><div class="line">    configurable: <span class="literal">false</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="keyword">delete</span> person1.name;</div><div class="line"><span class="built_in">console</span>.log(person1.name);                          <span class="comment">//'魏智棋'</span></div></pre></td></tr></table></figure>
+<h3 id="访问器属性的内部特性"><a href="#访问器属性的内部特性" class="headerlink" title="访问器属性的内部特性"></a>访问器属性的内部特性</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line"></div><div class="line">    _myname: <span class="string">'clw'</span>,</div><div class="line"></div><div class="line">    get name()&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'get方法被调用了'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>._myname + <span class="string">'1111'</span>;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    set name(value)&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'set方法被调用了'</span>);</div><div class="line">        <span class="keyword">this</span>._myname = value;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">//上面的代码等价于：</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> obj2 = &#123;</div><div class="line">    _myname: <span class="string">'clw'</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperty(obj, <span class="string">'name'</span>, &#123;</div><div class="line">    get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'get方法被调用了'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>._myname + <span class="string">'1111'</span>;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    set: <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'set方法被调用了'</span>);</div><div class="line">        <span class="keyword">this</span>._myname = value;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    configurable: <span class="literal">true</span>,</div><div class="line">    enumerable: <span class="literal">true</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="定义多个属性的内部特性"><a href="#定义多个属性的内部特性" class="headerlink" title="定义多个属性的内部特性"></a>定义多个属性的内部特性</h2><p>定义单个属性的内部特性使用<code>Object.defineProperty()</code>，定义多个属性使用的是<code>Object.defineProperties()</code>，这个方法接受2个参数，第一个是属性所属的对象，第二个是包含被定义属性的对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;&#125;;</div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperties(person1, &#123;</div><div class="line">    name: &#123;</div><div class="line">        value: <span class="string">'杨经艳'</span>,</div><div class="line">        enumerable: <span class="literal">true</span>,</div><div class="line">        configurable: <span class="literal">true</span>,</div><div class="line">        writable: <span class="literal">true</span></div><div class="line">    &#125;,</div><div class="line">    age: &#123;</div><div class="line">        value: <span class="number">23</span>,</div><div class="line">        enumerable: <span class="literal">false</span>,</div><div class="line">        configurable: <span class="literal">false</span>,</div><div class="line">        writable: <span class="literal">false</span></div><div class="line">    &#125;,</div><div class="line">    address: &#123;</div><div class="line">        get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;,</div><div class="line">        set: <span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;,</div><div class="line">        enumerable: <span class="literal">true</span>,</div><div class="line">        configurable: <span class="literal">true</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person1.name);              <span class="comment">//'杨经艳'</span></div><div class="line">person1.name = <span class="string">'冯晨阳'</span>;</div><div class="line"><span class="built_in">console</span>.log(person1.name);              <span class="comment">//'冯晨阳'</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person1.age);               <span class="comment">//23</span></div><div class="line">person1.age = <span class="number">500</span>;</div><div class="line"><span class="built_in">console</span>.log(person1.age);               <span class="comment">//23</span></div></pre></td></tr></table></figure>
+<h3 id="获取属性的内部特性"><a href="#获取属性的内部特性" class="headerlink" title="获取属性的内部特性"></a>获取属性的内部特性</h3><p>获取属性的内部特性的方法有两个：<code>Object.getOwnPropertyDescriptor()</code>和<code>Object.getOwnPropertyDescriptors()</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person1 = &#123;&#125;;</div><div class="line"></div><div class="line"><span class="built_in">Object</span>.defineProperties(person1, &#123;</div><div class="line">    name: &#123;</div><div class="line">        value: <span class="string">'杨经艳'</span>,</div><div class="line">        enumerable: <span class="literal">true</span>,</div><div class="line">        configurable: <span class="literal">true</span>,</div><div class="line">        writable: <span class="literal">true</span></div><div class="line">    &#125;,</div><div class="line">    age: &#123;</div><div class="line">        value: <span class="number">23</span>,</div><div class="line">        enumerable: <span class="literal">false</span>,</div><div class="line">        configurable: <span class="literal">false</span>,</div><div class="line">        writable: <span class="literal">false</span></div><div class="line">    &#125;,</div><div class="line">    address: &#123;</div><div class="line">        get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;,</div><div class="line">        set: <span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;,</div><div class="line">        enumerable: <span class="literal">true</span>,</div><div class="line">        configurable: <span class="literal">true</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">//获取对象中单个属性的内部特性</span></div><div class="line"><span class="keyword">var</span> descriptor = <span class="built_in">Object</span>.getOwnPropertyDescriptor(person1, <span class="string">'address'</span>);</div><div class="line"><span class="comment">//获取对象中所有属性的内部特性</span></div><div class="line"><span class="keyword">var</span> descriptors = <span class="built_in">Object</span>.getOwnPropertyDescriptors(person1);</div><div class="line"><span class="built_in">console</span>.log(descriptors);</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/09/25/Object/" data-id="cj8vgcb3e0000lglks1yhrm7l" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/25/课件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          jQuery发展 及常用选择器
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/25/函数/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">函数</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categorieën</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt/">JavaScipt</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/jQuery/">jQuery</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/深入理解模块化编程/">深入理解模块化编程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/课件/">jQuery发展 及常用选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/Object/">Object对象</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/函数/">函数</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

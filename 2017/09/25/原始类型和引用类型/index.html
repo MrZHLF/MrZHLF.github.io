@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>原型类型和引用类型 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="[TOC] 1. 什么是数据类型？我们先前学过的数据类型可以划分成两类：原始类型和引用类型。原始类型的数据都是一些比较简单数据，比如字符串，数字等。引用类型的数据稍微复杂一点，比如对象。 原始类型的数据直接存储在变量的内存空间中，而引用类型的数据并没有直接存储在变量的内存空间中，变量的内存空间中保存的仅仅是引用类型数据在内存中的地址（指针）。 2. 原始类型原始类型的数据都是一些比较简单的数据，比">
+<meta property="og:type" content="article">
+<meta property="og:title" content="原型类型和引用类型">
+<meta property="og:url" content="http://yoursite.com/2017/09/25/原始类型和引用类型/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] 1. 什么是数据类型？我们先前学过的数据类型可以划分成两类：原始类型和引用类型。原始类型的数据都是一些比较简单数据，比如字符串，数字等。引用类型的数据稍微复杂一点，比如对象。 原始类型的数据直接存储在变量的内存空间中，而引用类型的数据并没有直接存储在变量的内存空间中，变量的内存空间中保存的仅仅是引用类型数据在内存中的地址（指针）。 2. 原始类型原始类型的数据都是一些比较简单的数据，比">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/原始类型和引用类型/images/variabe_object.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/原始类型和引用类型/images/instance_of_object.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/25/原始类型和引用类型/images/04_pic.png">
+<meta property="og:updated_time" content="2017-10-17T10:13:07.707Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="原型类型和引用类型">
+<meta name="twitter:description" content="[TOC] 1. 什么是数据类型？我们先前学过的数据类型可以划分成两类：原始类型和引用类型。原始类型的数据都是一些比较简单数据，比如字符串，数字等。引用类型的数据稍微复杂一点，比如对象。 原始类型的数据直接存储在变量的内存空间中，而引用类型的数据并没有直接存储在变量的内存空间中，变量的内存空间中保存的仅仅是引用类型数据在内存中的地址（指针）。 2. 原始类型原始类型的数据都是一些比较简单的数据，比">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/25/原始类型和引用类型/images/variabe_object.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-原始类型和引用类型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/25/原始类型和引用类型/" class="article-date">
+  <time datetime="2017-09-25T03:07:48.000Z" itemprop="datePublished">2017-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      原型类型和引用类型
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="1-什么是数据类型？"><a href="#1-什么是数据类型？" class="headerlink" title="1. 什么是数据类型？"></a>1. 什么是数据类型？</h1><p>我们先前学过的数据类型可以划分成两类：原始类型和引用类型。原始类型的数据都是一些比较简单数据，比如字符串，数字等。引用类型的数据稍微复杂一点，比如对象。</p>
+<p>原始类型的数据直接存储在变量的内存空间中，而引用类型的数据并没有直接存储在变量的内存空间中，变量的内存空间中保存的仅仅是引用类型数据在内存中的地址（指针）。</p>
+<h1 id="2-原始类型"><a href="#2-原始类型" class="headerlink" title="2. 原始类型"></a>2. 原始类型</h1><p>原始类型的数据都是一些比较简单的数据，比如：<code>true</code>和<code>25</code>，这些数据会被直接存储在变量的内存空间中。ECMAScript 5 给我们提供了5种原始类型：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>数据</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td><code>true</code>、<code>false</code></td>
+<td>布尔值，<code>true</code>或<code>false</code></td>
+</tr>
+<tr>
+<td>Number</td>
+<td><code>12</code>、<code>12.5</code>、<code>NaN</code></td>
+<td>整型、浮点型、特殊值<code>NaN</code>（Not a number）</td>
+</tr>
+<tr>
+<td>String</td>
+<td><code>&#39;hello&#39;</code>、<code>&quot;hello&quot;</code></td>
+<td>被单引号或双引号扩起来的字符或字符串</td>
+</tr>
+<tr>
+<td>Null</td>
+<td><code>null</code></td>
+<td>只有一个值<code>null</code> </td>
+</tr>
+<tr>
+<td>Undefined</td>
+<td><code>undefined</code></td>
+<td>只有一个值<code>undefined</code>。任何只声明而没有赋值的变量都会被赋值为<code>undefined</code>。</td>
+</tr>
+</tbody>
+</table>
+<p>所有原始类型的值都可以使用字面量的方式表示。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// strings</span></div><div class="line"><span class="keyword">var</span> name = <span class="string">"Hello world!"</span>;</div><div class="line"></div><div class="line"><span class="comment">// numbers</span></div><div class="line"><span class="keyword">var</span> count = <span class="number">25</span>;</div><div class="line"><span class="keyword">var</span> price = <span class="number">2.5</span>;</div><div class="line"></div><div class="line"><span class="comment">// boolean</span></div><div class="line"><span class="keyword">var</span> married = <span class="literal">true</span>;</div><div class="line"></div><div class="line"><span class="comment">// null</span></div><div class="line"><span class="keyword">var</span> object = <span class="literal">null</span>;</div><div class="line"></div><div class="line"><span class="comment">// undefined</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> flag = <span class="literal">undefined</span>;</div><div class="line"><span class="keyword">var</span> ref;                <span class="comment">// 会被自动初始化为undefined</span></div></pre></td></tr></table></figure>
+<p>变量在存储原始类型的数据时，直接将数据存储到变量的内存空间中。当我们将存储原始类型数据的变量赋值给另一个变量时，其实是将变量存储的值复制了一份保存到了另一个变量中。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> color1 = <span class="string">'red'</span>;</div><div class="line"><span class="keyword">var</span> color2 = color1;</div></pre></td></tr></table></figure>
+<p><img src="./images/variabe_object.png" alt="变量对象"></p>
+<p>正因为每一个变量都是使用自己独立的存储空间保存原始类型的数据，因此当我们改变一个变量中的数据时不会影响到另个变量中的数据。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> color1 = <span class="string">'red'</span>;</div><div class="line"><span class="keyword">var</span> color2 = color1;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(color1);        <span class="comment">// 'red'</span></div><div class="line"><span class="built_in">console</span>.log(color2);        <span class="comment">// 'red'</span></div><div class="line"></div><div class="line">color1 = <span class="string">'blue'</span>;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(color1);        <span class="comment">// 'blue'</span></div><div class="line"><span class="built_in">console</span>.log(color2);        <span class="comment">// 'red'</span></div></pre></td></tr></table></figure>
+<p>在上面的代码中，<code>color1</code>的值被修改成<code>blue</code>，而<code>color2</code>中保存的还是先前的值。</p>
+<h2 id="2-1-检测原始类型的数据"><a href="#2-1-检测原始类型的数据" class="headerlink" title="2.1 检测原始类型的数据"></a>2.1 检测原始类型的数据</h2><p>检测原始类型的数据最好的方式是使用<code>typeof</code>操作符，该操作符会返回一个表示数据类型的字符串。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> str = <span class="string">'王志龙'</span>;</div><div class="line"><span class="keyword">var</span> num = <span class="number">23</span>;</div><div class="line"><span class="keyword">var</span> married = <span class="literal">false</span>;</div><div class="line"><span class="keyword">var</span> id = <span class="literal">undefined</span>;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> str);        <span class="comment">// 'string'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> num);        <span class="comment">// 'number'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> married);    <span class="comment">// 'boolean'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> id);         <span class="comment">// 'undefined'</span></div></pre></td></tr></table></figure>
+<p>上面这些数据的检测结果跟我们预期的结果是一样，然而，最不好理解的是<code>null</code>：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> value = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> value);       <span class="comment">// 'object'</span></div></pre></td></tr></table></figure>
+<p>当使用<code>typeof</code>检测<code>null</code>时，结果为<code>object</code>。实际上这是ECMAScript规范中一个公认的错误（TC39）。我们可以把<code>null</code>看作是一个对象的空指针。那我们怎样检测一个数据是否是<code>null</code>呢？其实我们可以将要检测的数据和<code>null</code>进行比较，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> value = <span class="literal">null</span>;</div><div class="line"><span class="built_in">console</span>.log(value === <span class="literal">null</span>);    <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h2 id="2-2-原始类型数据的方法"><a href="#2-2-原始类型数据的方法" class="headerlink" title="2.2. 原始类型数据的方法"></a>2.2. 原始类型数据的方法</h2><p>虽然字符串，数字，布尔值是原始数据类型，但是也有很多方法可以使用（<code>null</code>和<code>undefined</code>没有方法）。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'Hello world'</span>;</div><div class="line"><span class="keyword">var</span> lowercaseStr = str.toLowerCase();   <span class="comment">// 转换成小写形式</span></div><div class="line"><span class="keyword">var</span> firstLetter = str.charAt(<span class="number">0</span>);        <span class="comment">// 获取第一个字符</span></div><div class="line"><span class="keyword">var</span> subString = str.substring(<span class="number">2</span>,<span class="number">4</span>);     <span class="comment">// 获取2-4的字符</span></div><div class="line"><span class="keyword">var</span> splitStr = str.split(<span class="string">'o'</span>);          <span class="comment">// 将字符串以指定的分隔符分割成数组</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> count = <span class="number">10</span>;</div><div class="line"><span class="keyword">var</span> fixedCount = count.toFixed(<span class="number">2</span>);      <span class="comment">// 转换成 10.00</span></div><div class="line"><span class="keyword">var</span> hexCount = count.toString(<span class="number">16</span>);      <span class="comment">// 转换成 'a'</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> flag = <span class="literal">true</span>;</div><div class="line"><span class="keyword">var</span> stringFlag = flag.toString();       <span class="comment">// 转换成'true'</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：尽管它们可以像对象一样具有方法，但是它们依然是原始类型，不是对象，后面讲到原始包装器类型的时候再给大家详细讲解。</p>
+</blockquote>
+<h1 id="3-引用类型"><a href="#3-引用类型" class="headerlink" title="3. 引用类型"></a>3. 引用类型</h1><p>引用类型的数据指的是JS中的对象，类似于其他编程语言中的类。对象是由一系列的键值对（属性名和属性值）组成的无序列表。ECMAScript给我们提供了如下几种内置对象：</p>
+<ul>
+<li>Object</li>
+<li>Array</li>
+<li>Date</li>
+<li>RegExp(regular expression)</li>
+<li>Function</li>
+<li>Error</li>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+</ul>
+<p>我们可以通过<code>new</code>操作符和构造函数创建对象的实例，还可以通过字面量的方式创建对象的实例。例如，下面的代码通过<code>new</code>操作符和创建一个Object对象的实例，并将实例保存到<code>obj</code>变量中：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">obj.name = <span class="string">'zhangsan'</span>;</div></pre></td></tr></table></figure>
+<p>引用类型的数据并没有直接存储在变量的内存空间中，变量的内存空间中保存的仅仅是引用类型数据在内存中的地址（指针）。</p>
+<p><img src="./images/instance_of_object.png" alt="引用类型的变量对内存中实例的引用示意图"></p>
+<p>当我们将一个引用类型的变量赋值给另一个变量时，实际上将变量的中保存的地址拷贝了一份给了另一个变量，这时这两个变量都指向了同一个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1 = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"><span class="keyword">var</span> obj2 = obj1;</div></pre></td></tr></table></figure>
+<p><img src="./images/04_pic.png" alt="两个变量指向同一个引用类型的实例"></p>
+<p>虽然JavaScript是一种具有垃圾回收机制的语言，我们不用关心引用类型数据的内存分配问题。但是当我们不再使用某个引用类型的变量时，最好还是解除变量对实例的引用，这样有利于垃圾回收机制及时的进行回收，从而释放内存。解除引用最简单的方式就是，将变量赋值为<code>null</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> object1 = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"></div><div class="line"><span class="comment">//do something</span></div><div class="line"></div><div class="line">object1 = <span class="literal">null</span>;     <span class="comment">//解除object1对实例的引用</span></div></pre></td></tr></table></figure>
+<h1 id="4-实例化内置对象"><a href="#4-实例化内置对象" class="headerlink" title="4 实例化内置对象"></a>4 实例化内置对象</h1><h2 id="通过构造函数的方式"><a href="#通过构造函数的方式" class="headerlink" title="通过构造函数的方式"></a>通过构造函数的方式</h2><p>我们可以使用<code>new</code>操作符实例化每一个内置引用类型，例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> items = <span class="keyword">new</span> <span class="built_in">Array</span>();</div><div class="line"><span class="keyword">var</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'return a + b'</span>);</div><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"><span class="keyword">var</span> re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'\\d+'</span>);</div><div class="line"><span class="keyword">var</span> error = <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'你的浏览器不支持canvas'</span>);</div></pre></td></tr></table></figure>
+<h2 id="4-1-通过字面量的方式"><a href="#4-1-通过字面量的方式" class="headerlink" title="4.1 通过字面量的方式"></a>4.1 通过字面量的方式</h2><p>使用字面可以使我们在不使用<code>new</code>操作符和构造函数的情况下也可以实例化引用类型。</p>
+<h2 id="4-2-Object-和-Array的字面量"><a href="#4-2-Object-和-Array的字面量" class="headerlink" title="4.2 Object 和 Array的字面量"></a>4.2 Object 和 Array的字面量</h2><p>通过字面量的方式创建Object的实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    name: <span class="string">'lisi'</span>,</div><div class="line">    age: <span class="number">25</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>我们还可以使用字符串作为属性名，当我们的属性名中有空格或其他特殊字符时，可以这样写：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    <span class="string">'name'</span>: <span class="string">'lisi'</span>,</div><div class="line">    <span class="string">'age'</span>: <span class="number">25</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>尽管这两种写法在语法上有差异，但是它们的作用是相同的。它们等价于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">obj.name = <span class="string">'lisi'</span>;</div><div class="line">obj.age = <span class="number">25</span>;</div></pre></td></tr></table></figure>
+<p>通过字面量的形式创建Array的实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = [<span class="string">'red'</span>, <span class="string">'green'</span>, <span class="string">'blue'</span>];</div><div class="line"><span class="built_in">console</span>.log(colors[<span class="number">0</span>]);                 <span class="comment">//'red'</span></div></pre></td></tr></table></figure>
+<p>上面代码等价于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> colors = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'red'</span>, <span class="string">'green'</span>, <span class="string">'blue'</span>);</div><div class="line"><span class="built_in">console</span>.log(colors[<span class="number">0</span>]);                 <span class="comment">//'red'</span></div></pre></td></tr></table></figure>
+<h2 id="4-3-函数的字面量"><a href="#4-3-函数的字面量" class="headerlink" title="4.3 函数的字面量"></a>4.3 函数的字面量</h2><p>在我们创建方法的时候，使用最多的方式字面量的方式。使用Function构造函数的方式很少见。</p>
+<p>通过字面量的方式创建Function类型的实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">reflect</span>(<span class="params">value</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面代码等价于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> reflect = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'value'</span>,<span class="string">'return value'</span>);</div></pre></td></tr></table></figure>
+<p>使用字面量比使用构造函数更易于编写和理解。使用构造函数的方式不利于代码的调试，JavaScript的调试器不能正确识别它们。</p>
+<h2 id="4-4-正则表达式字面量"><a href="#4-4-正则表达式字面量" class="headerlink" title="4.4 正则表达式字面量"></a>4.4 正则表达式字面量</h2><p>JavaScript给正则表达式提供了字面量的形式：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> pattern1 = <span class="regexp">/\d+/gi</span>;</div><div class="line"></div><div class="line"><span class="comment">//等价于：</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> pattern2 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'\\d+'</span>,<span class="string">'gi'</span>);</div></pre></td></tr></table></figure>
+<p>正则表达式的字面量形式比构造函数形式更容易处理，我们不用关心字符串中的字符是否需要转义。在使用构造函数的时候，匹配模式是以字符串的形式传递的，所以需要将反斜杠进行转义。</p>
+<p>在实例化内置引用类型时，使用字面量或构造函数都可以，没有对错之分，但是在实例化Function类型的时，建议使用字面量的形式。</p>
+<h1 id="5-访问对象的属性"><a href="#5-访问对象的属性" class="headerlink" title="5. 访问对象的属性"></a>5. 访问对象的属性</h1><p>属性是以键值对的形式存储在对象中，访问属性最常用的方式是使用点的方式，但也可以是方括号的形式访问：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    name: <span class="string">'zhansan'</span>,</div><div class="line">    age: <span class="number">34</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj.name);      <span class="comment">//'zhansan'</span></div><div class="line"></div><div class="line"><span class="comment">//等价于：</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj[<span class="string">'name'</span>]);      <span class="comment">//'zhansan'</span></div></pre></td></tr></table></figure>
+<h1 id="6-检测引用类型"><a href="#6-检测引用类型" class="headerlink" title="6. 检测引用类型"></a>6. 检测引用类型</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'1'</span>,<span class="number">2</span>,<span class="literal">false</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="keyword">var</span> rp = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'\d+'</span>, <span class="string">'g'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'return a + b'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"></div><div class="line"><span class="keyword">var</span> error = <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'你的代码有错误'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 1. 使用typeof操作符检测引用类型</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> arr);        <span class="comment">// 'object'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> date);       <span class="comment">// 'object'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> rp);         <span class="comment">// 'object'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> func);       <span class="comment">// 'function'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> obj);        <span class="comment">// 'object'</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> error);      <span class="comment">// 'object'</span></div></pre></td></tr></table></figure>
+<p>使用<code>typeof</code>检测引用类型时，除了Function以外，其他的引用类型都不能被正确的识别。这个时候我们可以使用<code>instanceof</code>来检测它们。</p>
+<p><code>instanceof</code>操作符需要一个对象的实例和对象的构造函数作为参数，如果实例是使用该构造函数创建话，返回<code>true</code>，否则返回<code>false</code>:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">'1'</span>,<span class="number">2</span>,<span class="literal">false</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="keyword">var</span> rp = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'\d+'</span>, <span class="string">'g'</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line"></div><div class="line"><span class="keyword">var</span> error = <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'你的代码有错误'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 1. 使用typeof操作符检测引用类型</span></div><div class="line"><span class="built_in">console</span>.log(arr <span class="keyword">instanceof</span> <span class="built_in">Array</span>);         <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(date <span class="keyword">instanceof</span> <span class="built_in">Date</span>);         <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(rp <span class="keyword">instanceof</span> <span class="built_in">RegExp</span>);         <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(obj <span class="keyword">instanceof</span> <span class="built_in">Object</span>);        <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(error <span class="keyword">instanceof</span> <span class="built_in">Error</span>);       <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<p>因为所有的引用类型都继承自<code>Object</code>，因此每个引用类型的实例其实也是<code>Object</code>的实例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(arr <span class="keyword">instanceof</span> <span class="built_in">Object</span>);         <span class="comment">// true</span></div><div class="line"><span class="built_in">console</span>.log(date <span class="keyword">instanceof</span> <span class="built_in">Object</span>);        <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h1 id="7-原始包装器类型"><a href="#7-原始包装器类型" class="headerlink" title="7. 原始包装器类型"></a>7. 原始包装器类型</h1><p>JavaScript中最让疑惑的可能就是原始包装器类型。JavaScript给我们提供了 3 种包装器类型（String，Number，Boolean）。</p>
+<p>原始包装器类型也是引用类型，当字符串，数字或布尔值被读取的时候，原始包装器类型会自动在后台创建。例如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="string">'zhangsan'</span>;</div><div class="line"><span class="keyword">var</span> firstChar = name.charAt(<span class="number">0</span>);</div><div class="line"><span class="built_in">console</span>.log(firstChar);</div></pre></td></tr></table></figure>
+<p>后台为我们做了什么呢？</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"> <span class="keyword">var</span> name = <span class="string">'zhangsan'</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> temp = <span class="keyword">new</span> <span class="built_in">String</span>(name);</div><div class="line"><span class="keyword">var</span> firstChar = temp.charAt(<span class="number">0</span>);</div><div class="line">temp = <span class="literal">null</span>;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(firstChar);</div></pre></td></tr></table></figure>
+<p>String类型的对象只存在于调用方法（<code>charAt</code>方法）的那一刻，随后就被销毁了（这一过被称为 <strong>自动装箱</strong>）。</p>
+<h1 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h1><p>JavaScript没有类，但是它有类型，分为原始类型和引用类型。</p>
+<p>原始类型的值直接被保存在变量中，引用类型的值并不是直接保存变量中，变量中保存的仅仅是引用类型的值所在的内存地址。</p>
+<p>在检测原始类型的值时，除了<code>null</code>以外，其他的原始类型都可以使用<code>typeof</code>操作符。<code>null</code>必须跟特殊值<code>null</code>进行比较（value === null）。</p>
+<p>在创建引用类型的实例时，我们可以使用字面量和构造函数的方式。</p>
+<p>在访问对象的属性时，我们可以使用点表示法（<code>obj.name</code>）和方括号表示法（<code>obj[&#39;name&#39;]</code>）。</p>
+<p>函数也是JavaScript中的对象，我们可以使用<code>typeof</code>检测它。其他类型的对象必须使用<code>instanceof</code>操作符进行检测。</p>
+<p>为了使我们在操作原始类型数据的时候更加方便，JavaScript允许原始类型的值使用方法。</p>
+<p>JavaScript给我们提供了 3 种包装类型，<strong>String</strong>，<strong>Number</strong>，<strong>Boolean</strong>，一般情况下，我们不会直接使用它们。当我们读取原始类型的值时，JavaScript会在幕后（后台）自动创建它们。这样我们就可以向处理常规对象那样处理原始类型数据了，但是使用它们的语句一旦结束，这些临时创建的对象就会被销毁。</p>
+<p>虽然我们可以直接创建原始包装器类型的实例，但是建议不要这样做，因为有些时候会发生错误。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/09/25/原始类型和引用类型/" data-id="cj8vgcb4b0003lglk10atv0hr" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/09/25/函数/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          函数
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/25/创建对象的模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">创建对象模式</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categorieën</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt/">JavaScipt</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/jQuery/">jQuery</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/17/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/深入理解模块化编程/">深入理解模块化编程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/课件/">jQuery发展 及常用选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/Object/">Object对象</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/25/函数/">函数</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
