@@ -8,16 +8,16 @@
   <meta name="description" content="[TOC] 继承学习怎样创建对象是理解面向对象编程的第一步，第二步是理解继承。在传统的面向对象编程语言中，类继承其他类的属性。然而，JS的继承方式与传统的面向对象编程语言不同，继承可以发生对象之间，这种继承的机制是我们已经熟悉的一种机制：原型。 原型链接和Object.prototypeJS内置的继承方式被称为原型链接（prototype chaining）或原型继承（prototypal inh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="继承">
-<meta property="og:url" content="http://yoursite.com/2017/09/25/继承/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/09/26/继承/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="[TOC] 继承学习怎样创建对象是理解面向对象编程的第一步，第二步是理解继承。在传统的面向对象编程语言中，类继承其他类的属性。然而，JS的继承方式与传统的面向对象编程语言不同，继承可以发生对象之间，这种继承的机制是我们已经熟悉的一种机制：原型。 原型链接和Object.prototypeJS内置的继承方式被称为原型链接（prototype chaining）或原型继承（prototypal inh">
-<meta property="og:image" content="http://yoursite.com/2017/09/25/继承/img/object_inherit.png">
-<meta property="og:image" content="http://yoursite.com/2017/09/25/继承/img/prototype_chain.png">
-<meta property="og:updated_time" content="2017-10-17T10:13:18.264Z">
+<meta property="og:image" content="http://yoursite.com/2017/09/26/继承/img/object_inherit.png">
+<meta property="og:image" content="http://yoursite.com/2017/09/26/继承/img/prototype_chain.png">
+<meta property="og:updated_time" content="2017-10-17T10:17:04.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="继承">
 <meta name="twitter:description" content="[TOC] 继承学习怎样创建对象是理解面向对象编程的第一步，第二步是理解继承。在传统的面向对象编程语言中，类继承其他类的属性。然而，JS的继承方式与传统的面向对象编程语言不同，继承可以发生对象之间，这种继承的机制是我们已经熟悉的一种机制：原型。 原型链接和Object.prototypeJS内置的继承方式被称为原型链接（prototype chaining）或原型继承（prototypal inh">
-<meta name="twitter:image" content="http://yoursite.com/2017/09/25/继承/img/object_inherit.png">
+<meta name="twitter:image" content="http://yoursite.com/2017/09/26/继承/img/object_inherit.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -68,8 +68,8 @@
       <div class="outer">
         <section id="main"><article id="post-继承" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/09/25/继承/" class="article-date">
-  <time datetime="2017-09-25T03:07:48.000Z" itemprop="datePublished">2017-09-25</time>
+    <a href="/2017/09/26/继承/" class="article-date">
+  <time datetime="2017-09-26T03:07:48.000Z" itemprop="datePublished">2017-09-26</time>
 </a>
     
   <div class="article-category">
@@ -142,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/25/继承/" data-id="cj8vgcb4m0007lglkjj6jtj0a" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/09/26/继承/" data-id="cj8vgcb4m0007lglkjj6jtj0a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -151,19 +151,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/09/25/原型/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Nieuwer</strong>
+    <a href="/2017/09/27/Object/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          原型
+          Object对象
         
       </div>
     </a>
   
   
-    <a href="/2017/09/22/草稿/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ouder</strong>
-      <div class="article-nav-title">this的用法</div>
+    <a href="/2017/09/25/深入理解模块化编程/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">深入理解模块化编程</div>
     </a>
   
 </nav>
@@ -177,7 +177,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categorieën</h3>
+    <h3 class="widget-title">Categories</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt/">JavaScipt</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScipt面向对象/">JavaScipt面向对象</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/jQuery/">jQuery</a></li></ul>
     </div>
@@ -192,7 +192,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
     </div>
@@ -202,7 +202,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -211,19 +211,19 @@
           </li>
         
           <li>
-            <a href="/2017/09/25/深入理解模块化编程/">深入理解模块化编程</a>
+            <a href="/2017/09/30/原型/">原型</a>
           </li>
         
           <li>
-            <a href="/2017/09/25/课件/">jQuery发展 及常用选择器</a>
+            <a href="/2017/09/29/创建对象的模式/">创建对象模式</a>
           </li>
         
           <li>
-            <a href="/2017/09/25/Object/">Object对象</a>
+            <a href="/2017/09/28/函数/">函数</a>
           </li>
         
           <li>
-            <a href="/2017/09/25/函数/">函数</a>
+            <a href="/2017/09/27/Object/">Object对象</a>
           </li>
         
       </ul>
